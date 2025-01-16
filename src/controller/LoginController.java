@@ -42,13 +42,12 @@ public class LoginController {
     }
 
     public void loginOnAction(ActionEvent actionEvent) throws IOException {
-//        if(txtPassword.getText().equals(password) && txtUsername.getText().equals(username)){
-//            System.out.println("logged");
-//            setUi("dashboardForm");
-//        }else{
-//            System.out.println("incorrect");
-//            new Alert(Alert.AlertType.WARNING,"Password doesn't match.").show();
-//        }
-        setUi("dashboardForm");
+        if(txtPassword.getText().equals(password) && txtUsername.getText().equals(username)){
+            System.out.println("logged");
+            setUi("dashboardForm");
+        }else{
+            System.out.println("incorrect");
+            new Alert(Alert.AlertType.WARNING,"Password doesn't match.").show();
+        }
     }
 }
